@@ -6,115 +6,116 @@
     <div class="col-md-3 sidebar">
         <div class="spacing">
             <a>QuickiGo</a>
-            <br/>
+            <br />
             <i><small>Your best letter drafter...</small></i>
         </div>
         <hr />
         <div class="form-group">
             <label>Full name:</label>
             <br />
-            <input class="form-control input-sm" type="text" placeholder="Firstname" />
+            <input class="form-control input-sm" type="text" id="form-fullname" placeholder="Fullname" />
         </div>
 
         <div class="form-group">
             <label>Purpose of letter:</label>
             <br />
-            <textarea class="form-control input-sm" type="text" placeholder="Purpose of letter" rows="3"></textarea>
+            <textarea class="form-control input-sm" type="text" id="form-purpose-of-letter" placeholder="Purpose of letter" rows="3"></textarea>
         </div>
-        
+
         <div class="form-group">
             <label>Your Address:</label>
             <br />
-            <textarea class="form-control input-sm" type="text" placeholder="Your Address" rows="3"></textarea>
+            <textarea class="form-control input-sm" type="text" id="form-address" placeholder="Your Address" rows="3"></textarea>
         </div>
 
         <div class="form-group">
             <label>Sender Address:</label>
             <br />
-            <textarea class="form-control input-sm" type="text" placeholder="Sender Address" rows="3"></textarea>
+            <textarea class="form-control input-sm" type="text" id="form-sender-address" placeholder="Sender Address" rows="3"></textarea>
         </div>
 
-        
         <div class="form-group">
-            <input class="" type="checkbox" />
+            <input class="" type="checkbox" id="form-parent-consent" />
             <label>My parents are aware.</label>
         </div>
 
         <div class="form-group">
             <label>Parent Phone number:</label>
             <br />
-            <input class="form-control input-sm" type="text" placeholder="Parent Phone number" />
+            <input class="form-control input-sm" type="text" id="form-parent-phone-no" placeholder="Parent Phone number" />
         </div>
 
         <div class="form-group">
             <label>Any document of proof:</label>
             <br />
-            <input class="form-control btn btn-warning btn-sm input-sm" type="file" value="Proof document" />
+            <input class="form-control btn btn-warning btn-sm input-sm" id="form-proof-document" type="file" value="Proof document" />
         </div>
 
-        <input class="btn btn-lg btn-success pull-right" type="button" value="Print"/>
-        <br/>
+        <input class="btn btn-lg btn-success pull-right" type="button" value="Print" />
+        <br />
         <br />
     </div>
 
     <div class="col-md-9 letter-content">
         @*Senders Address*@
         <div class="row">
-            <p class="pull-right">
-                Room F406 Peter Hall,<br/>
-                Covenant University,<br/>
-                Canaanland,<br/>
-                Ota,<br/>
-                Ogun State.<br/>
+            <p class="pull-right" id="letter-personal-address">
+                Room F406 Peter Hall,<br />
+                Covenant University,<br />
+                Canaanland,<br />
+                Ota,<br />
+                Ogun State.<br />
             </p>
         </div>
 
-        <br/><br/>
-        
+        <br /><br />
+
         @*Recipients Address and Dear Sir*@
         <div class="row">
-            <p class="pull-left">
-                <strong>The Dean of Student Affairs,</strong><br/>
-                Covenant University,<br/>
-                Canaanland,<br/>
-                Ota,<br/>
-                Ogun State.<br/><br/>
-                &emsp;&emsp;<strong>Dear Sir/Ma</strong>,
+            <p class="pull-left" id="letter-sender-address">
+                <strong>The Dean of Student Affairs,</strong><br />
+                Covenant University,<br />
+                Canaanland,<br />
+                Ota,<br />
+                Ogun State.<br /><br />
             </p>
+            <div>
+                &emsp;&emsp;<strong>Dear Sir/Ma</strong>,
+            </div>
         </div>
-        
+
         @*Letter Title*@
         <div class="row">
             <p class="text-center">
-                <u><strong>Application for Exeat</strong></u>
+                <u><strong id="letter-title">Application for Exeat</strong></u>
             </p>
         </div>
 
         @*Body of letter*@
         <div class="row">
             <p>
-                &emsp;&emsp;I <a class="letter-data">John Doe</a>, with matric number <a class="letter-data">15XXXXXX</a>
-                from The Department of <a class="letter-data">XXXXXXX</a>, humbly write to apply for 
-                <a class="letter-data">exeat</a> on the @DateTime.Now.DayOfWeek @DateTime.Now.Day, @DateTime.Now.Year.
+                &emsp;&emsp;I <a class="letter-data letter-fullname">John Doe</a>, with matric number <a class="letter-data" id="letter-matric-number">15XXXXXX</a>
+                from The Department of <a class="letter-data" id="letter-department-name">XXXXXXX</a>, humbly write to apply for
+                <a class="letter-data" id="letter-type">exeat</a> on the @DateTime.Now.DayOfWeek @DateTime.Now.Day, @DateTime.Now.Year.
             </p>
             <p>
-                &emsp;&emsp;The purpose of this <a class="letter-data">exeat</a> is 
-                <a class="letter-data">enable me purchase necessary items for the completion of my final year project </a>.
-                <a class="letter-data">Prior to this, I humbly note that my parent are aware of my action.</a>
+                &emsp;&emsp;The purpose of this <a class="letter-data" id="letter-title">exeat</a> is
+                <a class="letter-data" id="letter-purpose">enable me purchase necessary items for the completion of my final year project </a>.
+                <a class="letter-data" id="letter-parent-consent">Prior to this, I humbly note that my parent are aware of my action.</a>
             </p>
-            
+
             <p>
-                &emsp;&emsp;I'll be grateful if this <a class="letter-data">exeat</a> is honored in due time.
-                <br/><br/>
+                &emsp;&emsp;I'll be grateful if this <a class="letter-data" id="letter-type">exeat</a> is honored in due time.
+                <br /><br />
                 Thank you as I anticipate a positive response.
             </p>
         </div>
-        
+
         @*Conclusion*@
         <div class="row pull-right">
-            Yours Sincerely,<br/>
-            <br/><br />
-            <a class="letter-data">John Doe</a>.
+            Yours Sincerely,<br />
+            <br /><br />
+            <a class="letter-data letter-fullname">John Doe</a>.
         </div>
     </div>
 </div>
