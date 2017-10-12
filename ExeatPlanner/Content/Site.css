@@ -41,9 +41,11 @@ textarea {
     font-size: 14px;
 }
 
-.letter-heading {
-    
-}
+/*.letter-data:hover, 
+.letter-data {
+    text-decoration: none;
+    color: black;
+}*/
 
 .hr-rule {
     color:white;
