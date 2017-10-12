@@ -2,14 +2,25 @@
 class FormUpdater {
     public static initialiseBinding(): void {
         this.bindFullName();
+        this.bindPurposeOfLetter();
+        this.bindSenderAddress();
+        this.bindRecipientAddress();
     }
 
     static bindFullName(): void {
         Binding.bind("#form-fullname", ".letter-fullname");
     }
 
-    static bindFullName(): void {
-        Binding.bind("#form-fullname", ".letter-fullname");
+    static bindPurposeOfLetter(): void {
+        Binding.bind("#form-purpose-of-letter", ".letter-purpose");
+    }
+
+    static bindSenderAddress(): void {
+        Binding.bind("#form-sender-address", ".letter-sender-address");
+    }
+
+    static bindRecipientAddress(): void {
+        Binding.bind("#form-recipient-address", ".letter-recipient-address");
     }
 }
 
