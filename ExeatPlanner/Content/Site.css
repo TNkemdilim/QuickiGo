@@ -8,9 +8,10 @@ body {
     margin:0px;
 }
 
-.body-content, .inner-body {
+.inner-body {
     padding: 0px;
     margin: 0px;
+    width: 100%;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -32,6 +33,10 @@ textarea {
     color:white;
     padding:30px;
     max-height:100%;
+}
+
+.letter-content {
+    padding: 30px;
 }
 
 .hr-rule {

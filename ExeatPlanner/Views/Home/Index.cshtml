@@ -2,8 +2,8 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="container inner-body">
-    <div class="col-md-4 sidebar">
+<div class="inner-body">
+    <div class="col-md-3 sidebar">
         <div class="spacing">
             QuickiGo
         </div>
@@ -21,14 +21,21 @@
         </div>
 
         <div class="form-group">
-            <label>Matric Number:</label>
+            <label>Purpose of letter:</label>
             <br />
-            <input class="form-control input-sm" type="text" placeholder="Matric number" />
+            <input class="form-control input-sm" type="text" placeholder="Purpose of letter" />
         </div>
+        
+        <div class="form-group">
+            <label>Parent Phone number:</label>
+            <br />
+            <input class="form-control input-sm" type="text" placeholder="Parent Phone number" />
+        </div>
+
         <div class="form-group">
             <label>Your Address:</label>
             <br />
-            <textarea class="form-control input-sm" type="text" placeholder="Your Address" rows="5"></textarea>
+            <textarea class="form-control input-sm" type="text" placeholder="Your Address" rows="3"></textarea>
         </div>
 
         <div class="form-group">
@@ -40,15 +47,17 @@
         <div class="form-group">
             <label>Sender Address:</label>
             <br />
-            <textarea class="form-control input-sm" type="text" placeholder="Sender Address" rows="5"></textarea>
+            <textarea class="form-control input-sm" type="text" placeholder="Sender Address" rows="3"></textarea>
         </div>
 
-        <input class="btn btn-sm btn-success pull-right" type="button" value="Generate"/>
+        <input class="btn btn-lg btn-success pull-right" type="button" value="Print"/>
+        <br/>
+        <br />
     </div>
 
-    <div class="col-md-8">
+    <div class="col-md-9 letter-content">
         <div class="row">
-            <p>
+            <p class="pull-right">
                 lorem ipsum dolor
             </p>
         </div>
