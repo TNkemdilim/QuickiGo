@@ -36,14 +36,23 @@ textarea {
 }
 
 .letter-content {
-    padding: 30px;
+    padding: 20px 80px;
+    font-family: 'Century Gothic';
+    font-size: 14px;
+}
+
+.letter-heading {
+    
 }
 
 .hr-rule {
     color:white;
 }
 div.spacing {
-    font-family:'Century Gothic';
-    font-size: x-large;
     padding: 20px;
+    font-family:'Century Gothic';
+}
+div.spacing  a {
+    font-size: x-large;
+    color: white;
 }

@@ -5,43 +5,27 @@
 <div class="inner-body">
     <div class="col-md-3 sidebar">
         <div class="spacing">
-            QuickiGo
+            <a>QuickiGo</a>
+            <br/>
+            <i><small>Your best letter drafter...</small></i>
         </div>
         <hr />
         <div class="form-group">
-            <label>Firstname:</label>
+            <label>Full name:</label>
             <br />
             <input class="form-control input-sm" type="text" placeholder="Firstname" />
         </div>
 
         <div class="form-group">
-            <label>Lastname:</label>
-            <br />
-            <input class="form-control input-sm" type="text" placeholder="Lastname" />
-        </div>
-
-        <div class="form-group">
             <label>Purpose of letter:</label>
             <br />
-            <input class="form-control input-sm" type="text" placeholder="Purpose of letter" />
+            <textarea class="form-control input-sm" type="text" placeholder="Purpose of letter" rows="3"></textarea>
         </div>
         
-        <div class="form-group">
-            <label>Parent Phone number:</label>
-            <br />
-            <input class="form-control input-sm" type="text" placeholder="Parent Phone number" />
-        </div>
-
         <div class="form-group">
             <label>Your Address:</label>
             <br />
             <textarea class="form-control input-sm" type="text" placeholder="Your Address" rows="3"></textarea>
-        </div>
-
-        <div class="form-group">
-            <label>Parent Phone number:</label>
-            <br />
-            <input class="form-control input-sm" type="text" placeholder="Parent Phone number" />
         </div>
 
         <div class="form-group">
@@ -50,16 +34,87 @@
             <textarea class="form-control input-sm" type="text" placeholder="Sender Address" rows="3"></textarea>
         </div>
 
+        
+        <div class="form-group">
+            <input class="" type="checkbox" />
+            <label>My parents are aware.</label>
+        </div>
+
+        <div class="form-group">
+            <label>Parent Phone number:</label>
+            <br />
+            <input class="form-control input-sm" type="text" placeholder="Parent Phone number" />
+        </div>
+
+        <div class="form-group">
+            <label>Any document of proof:</label>
+            <br />
+            <input class="form-control input-sm" type="file" value="Proof document" placeholder="Parent Phone number" />
+        </div>
+
         <input class="btn btn-lg btn-success pull-right" type="button" value="Print"/>
         <br/>
         <br />
     </div>
 
     <div class="col-md-9 letter-content">
+        @*Senders Address*@
         <div class="row">
             <p class="pull-right">
-                lorem ipsum dolor
+                Room F406 Peter Hall,<br/>
+                Covenant University,<br/>
+                Canaanland,<br/>
+                Ota,<br/>
+                Ogun State.<br/>
             </p>
+        </div>
+
+        <br/><br/>
+        
+        @*Recipients Address and Dear Sir*@
+        <div class="row">
+            <p class="pull-left">
+                <strong>The Dean of Student Affairs,</strong><br/>
+                Covenant University,<br/>
+                Canaanland,<br/>
+                Ota,<br/>
+                Ogun State.<br/><br/>
+                &emsp;&emsp;<strong>Dear Sir/Ma</strong>,
+            </p>
+        </div>
+        
+        @*Letter Title*@
+        <div class="row">
+            <p class="text-center">
+                <u><strong>Application for Exeat</strong></u>
+            </p>
+        </div>
+
+        @*Body of letter*@
+        <div class="row">
+            <p>
+                &emsp;&emsp;I <a class="letter-data">John Doe</a>, with matric number <a class="letter-data">15XXXXXX</a>
+                from The Department of <a class="letter-data">XXXXXXX</a>, humbly write to apply for 
+                <a class="letter-data">exeat</a> on the @DateTime.Now.DayOfWeek @DateTime.Now.Day, @DateTime.Now.Year.
+            </p>
+            <p>
+                &emsp;&emsp;The purpose of this <a class="letter-data">exeat</a> is 
+                <a class="letter-data">enable me purchase necessary items for the completion of my final year project </a>.
+                <a class="letter-data">Prior to this, I humbly note that my parent are aware of my action.</a>
+            </p>
+            
+            <p>
+                &emsp;&emsp;I'll be grateful if this <a class="letter-data">exeat</a> is honored in due time.
+                <br/><br/>
+                Thank you as I anticipate a positive response.
+            </p>
+        </div>
+        
+        @*Conclusion*@
+        <div class="row pull-right">
+            Yours Sincerely,<br/>
+            <br/><br />
+            <a class="letter-data">John Doe</a>.
         </div>
     </div>
 </div>
