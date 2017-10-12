@@ -1,0 +1,44 @@
+﻿* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    padding:0px;
+    margin:0px;
+}
+
+.body-content, .inner-body {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    /*max-width: 280px;*/
+}
+
+.sidebar {
+    background-color: crimson;
+    color:white;
+    padding:30px;
+    max-height:100%;
+}
+
+.hr-rule {
+    color:white;
+}
+div.spacing {
+    font-family:'Century Gothic';
+    font-size: x-large;
+    padding: 20px;
+}
