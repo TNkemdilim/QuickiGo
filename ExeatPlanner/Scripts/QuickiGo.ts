@@ -1,17 +1,25 @@
 ﻿/// <reference path="typings/jquery/jquery.d.ts" />
 class FormUpdater {
     public static initialiseBinding(): void {
-        Binding.bindFullName();
+        this.bindFullName();
+    }
+
+    static bindFullName(): void {
+        Binding.bind("#form-fullname", ".letter-fullname");
+    }
+
+    static bindFullName(): void {
+        Binding.bind("#form-fullname", ".letter-fullname");
     }
 }
 
 class Binding {
-    public static bindFullName(): void {
-        $("#form-fullname").on("change keyup paste", function () {
+    static bind(elementLocator: string, bindingLocator: string): void {
+        $(elementLocator).on("change keyup paste", function () {
             const newValue = this.value.toString();
 
-            $(".letter-fullname").each((index, elem) => {
-                elem.innerHTML = newValue;
+            $(bindingLocator).each((index, element) => {
+                element.innerHTML = newValue;
             });
         });
     }

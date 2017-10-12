@@ -3,18 +3,21 @@ var FormUpdater = (function () {
     function FormUpdater() {
     }
     FormUpdater.initialiseBinding = function () {
-        Binding.bindFullName();
+        this.bindFullName();
+    };
+    FormUpdater.bindFullName = function () {
+        Binding.bind("#form-fullname", ".letter-fullname");
     };
     return FormUpdater;
 }());
 var Binding = (function () {
     function Binding() {
     }
-    Binding.bindFullName = function () {
-        $("#form-fullname").on("change keyup paste", function () {
+    Binding.bind = function (elementLocator, bindingLocator) {
+        $(elementLocator).on("change keyup paste", function () {
             var newValue = this.value.toString();
-            $(".letter-fullname").each(function (index, elem) {
-                elem.innerHTML = newValue;
+            $(bindingLocator).each(function (index, element) {
+                element.innerHTML = newValue;
             });
         });
     };
